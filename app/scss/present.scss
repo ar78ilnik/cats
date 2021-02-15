@@ -1,0 +1,81 @@
+.present {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/present-mobile.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 409px;
+    padding-top: 48px;
+
+    &__city {
+        @include font(Lato, 12px, 400, normal, 14px, $black);
+    }
+
+    &__title {
+        text-align: center;
+        @include font(Rubik, 44px, 700, normal, 52px, $black);
+        padding-top: 5px;
+        margin-bottom: 34px;
+    }
+
+    &__about {
+        display: block;
+        margin: 0 auto;
+        @include font(Lato, 16px, 500, normal, 19px, $black);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .present {
+        height: 738px;
+        padding-top: 130px;
+        background-image: url(../img/present-tablet.webp);
+
+        &__city {
+            @include font(Lato, 14px, 400, normal, 17px, $black);
+        }
+
+        &__title {
+            text-align: center;
+            @include font(Rubik, 62px, 700, normal, 74px, $black);
+            padding-top: 5px;
+            margin-bottom: 34px;
+        }
+
+        &__about {
+            display: block;
+            margin: 0 auto;
+            @include font(Lato, 20px, 500, normal, 24px, $black);
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .present {
+        height: 504px;
+        padding-top: 150px;
+        align-items: flex-start;
+        padding-left: 200px;
+        background-image: url(../img/present-desktop.webp);
+        background-position: center top;
+        background-size: contain;
+        //background: linear-gradient(180deg, #FF9B53 -5.96%, #F8B653 74.9%);
+
+        &__city {
+            @include font(Lato, 14px, 400, normal, 17px, $black);
+        }
+
+        &__title {
+            @include font(Rubik, 62px, 700, normal, 74px, $black);
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        &__about {
+            display: block;
+            @include font(Lato, 20px, 500, normal, 24px, $black);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.title {
+	&_h2 {
+		@include font (Rubik, 28px, 700, normal, 33px, $black);
+		margin-bottom: 32px;
+	}
+	&_h3 {
+		@include font (Rubik, 18px, 500, normal, 25px, $black);
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		&_h2 {
+			font-size: 36px;
+			line-height: 43px;
+			margin-bottom: 50px;
+		}
+		&_h3 {
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+}
