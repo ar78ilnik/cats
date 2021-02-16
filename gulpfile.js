@@ -20,14 +20,17 @@ function clean() {
     return del('dist');
 };
 
-function html() {
-    return gulp.src('app/**/*.html', {
-            base: 'app'
-        })
+function toHtml() {
+    return gulp.src('app/pages/**/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('dist'))
+        .pipe(rename('index.php'))
         .pipe(gulp.dest('dist'))
         .pipe(debug({
-            title: 'copy html'
-        }))
+            title: 'toHtml toPhp'
+        }));
 };
 
 function toWebp() {
@@ -99,7 +102,7 @@ function style() {
 };
 
 function watch() {
-    gulp.watch('app/*.html', html);
+    gulp.watch('app/pages/**/*.pug', toHtml);
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', copy);
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
@@ -110,17 +113,16 @@ function server() {
     bs.init({
         server: 'dist'
     });
-    bs.watch('app/*.html').on('change', bs.reload);
-    bs.watch('app/components/**/*.pug').on('change', bs.reload);
+    bs.watch('app/pages/**/*.pug').on('change', bs.reload);
     bs.watch('app/scss/*.scss').on('change', bs.reload);
     bs.watch('app/js/**/*.js').on('change', bs.reload);
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, toWebp, sprite, style, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, toWebp, sprite, style, toHtml, gulp.parallel(watch, server));
 
 exports.clean = clean;
-exports.html = html;
+exports.toHtml = toHtml;
 exports.toWebp = toWebp;
 exports.sprite = sprite;
 exports.copy = copy;
