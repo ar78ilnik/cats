@@ -1,24 +1,57 @@
 .title {
-	&_h2 {
-		@include font (Rubik, 28px, 700, normal, 33px, $black);
-		margin-bottom: 32px;
-	}
-	&_h3 {
-		@include font (Rubik, 18px, 500, normal, 25px, $black);
-		margin-bottom: 10px;
-	}
+    &_h1 {
+        @include font(Rubik, 28px, 700, normal, 33px, $black);
+    }
+
+    &_h2 {
+        @include font (Rubik, 28px, 700, normal, 33px, $black);
+        margin-top: 63px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &_h3 {
+        @include font (Rubik, 18px, 500, normal, 25px, $black);
+        margin-bottom: 10px;
+    }
+
+    &_h4 {
+        @include font (Lato, 15px, 700, normal, 18px, $black);
+        margin-bottom: 10px;
+    }
+
+    &_contact {
+        @include font (Rubik, 28px, 700, normal, 33px, $black);
+    }
 }
 
 @media screen and (min-width: 768px) {
-	.title {
-		&_h2 {
-			font-size: 36px;
-			line-height: 43px;
-			margin-bottom: 50px;
-		}
-		&_h3 {
-			font-size: 20px;
-			line-height: 28px;
-		}
-	}
+    .title {
+        &_h2 {
+            @include font (Rubik, 36px, 700, normal, 43px, $black);
+            margin-bottom: 50px;
+        }
+
+        &_h3 {
+            @include font (Rubik, 22px, 500, normal, 30px, $black);
+        }
+
+        &_h4 {
+            @include font (Lato, 16px, 700, normal, 19px, $black);
+            margin-bottom: 10px;
+        }
+
+        &_contact {
+            @include font (Rubik, 36px, 700, normal, 42px, $black);
+            width: 260px;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .title {
+        &_contact {
+            margin-bottom: 40px;
+        }
+    }
 }

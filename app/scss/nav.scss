@@ -1,14 +1,31 @@
 .nav {
-	&_header {
-		display: none;
-	}
+    &_header {
+        display: none;
+    }
+
+    &_footer {
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) {
-	.nav {
-		&_header {
-			display: block;
-			width: 400px;
-		}
-	}
+    .nav {
+        &_header {
+            display: block;
+            width: 400px;
+        }
+
+        &_footer {
+            width: 430px;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .nav {
+        &_footer {
+            width: 430px;
+        }
+    }
 }

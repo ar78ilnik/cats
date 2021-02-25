@@ -1,0 +1,34 @@
+.article {
+
+    &_numbers,
+    &_reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_map {
+        width: 100%;
+        height: 300px;
+        background-color: $yellow;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        &_map {
+            width: 50%;
+            height: 522px;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .article {
+        &_map {
+            height: 582px;
+            flex-grow: 1;
+        }
+    }
+}

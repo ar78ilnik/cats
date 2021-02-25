@@ -1,6 +1,3 @@
-/*
-	Theme Name: Cats
-*/
 @import 'vars';
 @import 'mixins';
 @import 'fonts';
@@ -8,9 +5,17 @@
 @import 'header';
 @import 'nav';
 @import 'list';
+@import 'item';
 @import 'link';
 @import 'icon';
 @import 'present';
 @import 'button';
 @import 'title';
 @import 'whyus';
+@import 'slider';
+@import 'article';
+@import 'contacts.scss';
+@import 'social';
+@import 'footer';
+@import 'copyright';
+@import 'logo';

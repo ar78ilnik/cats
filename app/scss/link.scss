@@ -1,14 +1,22 @@
 .link {
-	&_header {
-		@include font('Rubik-Regular', 20px, 500, normal, 23px, #1a212f);
-		text-decoration: none;
-	}
+    &_header {
+        @include font(Rubik, 20px, 500, normal, 23px, #1a212f);
+        text-decoration: none;
+    }
+
+    &_footer {
+        @include font(Lato, 16px, 600, normal, 34px, #1a212f);
+        text-decoration: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
-	.link {
-		&_header {
-			@include font(Lato, 16px, 600, normal, 19px, #1a212f);
-		}
-	}
+    .link {
+        &_header {
+            @include font(Lato, 16px, 600, normal, 19px, #1a212f);
+            height: inherit;
+            display: flex;
+            align-items: center;
+        }
+    }
 }

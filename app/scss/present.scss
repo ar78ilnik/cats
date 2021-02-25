@@ -54,10 +54,10 @@
 
 @media screen and (min-width: 1366px) {
     .present {
-        height: 504px;
+        height: 374px;
+        width: 1366px;
+        margin: 0 auto;
         padding-top: 150px;
-        align-items: flex-start;
-        padding-left: 200px;
         background-image: url(../img/present-desktop.webp);
         background-position: center top;
         background-size: contain;
