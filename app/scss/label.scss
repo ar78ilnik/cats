@@ -1,0 +1,6 @@
+.label {
+    &_check {
+        @include font(Lato, 14px, 400, normal, 16px, $black);
+        padding-left: 30px;
+    }
+}

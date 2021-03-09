@@ -12,9 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         });
     };
-    const filterBtn = document.querySelector('.button_filter'),
-        modalFilter = document.querySelector('.popup_filter'),
-        modalClose = document.querySelector('.container_filter .popup__close_filter');
+    const cardBtn = document.querySelector('.button_card'),
+        modalReserv = document.querySelector('.popup_reserv'),
+        modalClose = document.querySelector('.container_reserv .popup__close_reserv');
 
-    bindModal(filterBtn, modalFilter, modalClose);
+    bindModal(cardBtn, modalReserv, modalClose);
 });

@@ -2,6 +2,7 @@
     &_header {
         @include font(Rubik, 20px, 500, normal, 23px, #1a212f);
         text-decoration: none;
+        line-height: 40px;
     }
 
     &_footer {

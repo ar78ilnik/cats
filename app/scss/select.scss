@@ -1,0 +1,19 @@
+.select {
+    width: 140px;
+    @include font (Lato, 14px, 600, normal, 17px, $black);
+    background-color: $white;
+    width: 154px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0 1px 3px $shadow);
+    grid-area: select;
+
+    &__cat {
+        background-image: url('../img/check.svg');
+        background-size: 10px 10px;
+    }
+}

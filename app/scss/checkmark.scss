@@ -1,0 +1,12 @@
+.checkmark {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    border: 1px solid $border-cheks;
+
+    &::before {}
+}

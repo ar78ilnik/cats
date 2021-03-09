@@ -8,11 +8,84 @@
     <title>Catalog</title>
 </head>
 
-<body>
+<body class="body">
     @@include('html_components/_header.html')
-    <div class="container">
-        <h1 class="title title_h1">Наши номера</h1>
+    <div class="container container_catalog">
+        <h1 class="title title_h1 title_grid">Наши номера</h1>
+        <button class="button button_filter">
+            <svg class="icon icon_filter">
+                <use xlink:href="img/sprite.svg#filtr"></use>
+            </svg>
+            Фильтры
+        </button>
+        <select class="select">
+            <option value="quadMore" label="По площади (больше)"></option>
+            <option value="quadLess" label="По площади (меньше)"></option>
+            <option value="priceMore" label="По цене (больше)"></option>
+            <option value="priceLess" label="По цене (меньше)"></option>
+        </select>
+        <section class="catalog">
+            @@include('html_components/_card.html', {
+            "img_webp": "img/card1.webp",
+            "img_jpg": "img/card1.jpg",
+            "h2": "Эконом",
+            "sizes": "Размеры (ШхГхВ) - 90х70х180 см",
+            "quad": "Площадь - 0,63 м2",
+            "features": "Оснащение номера:",
+            "price": "Цена за сутки:"
+            })
+            @@include('html_components/_card.html', {
+            "img_webp": "img/card2.webp",
+            "img_jpg": "img/card2.jpg",
+            "h2": "Эконом плюс",
+            "sizes": "Размеры (ШхГхВ) - 90х100х180 см",
+            "quad": "Площадь - 0,90 м2",
+            "features": "Оснащение номера",
+            "price": "Цена за сутки:"
+            })
+            @@include('html_components/_card.html', {
+            "img_webp": "img/card3.webp",
+            "img_jpg": "img/card3.jpg",
+            "h2": "Комфорт",
+            "sizes": "Размеры (ШхГхВ) - 90х70х180 см",
+            "quad": "Площадь - 0,63 м2",
+            "features": "Оснащение номера:",
+            "price": "Цена за сутки:"
+            })
+            @@include('html_components/_card.html', {
+            "img_webp": "img/card4.webp",
+            "img_jpg": "img/card4.jpg",
+            "h2": "Сьют",
+            "sizes": "Размеры (ШхГхВ) - 90х70х180 см",
+            "quad": "Площадь - 0,63 м2",
+            "features": "Оснащение номера",
+            "price": "Цена за сутки:"
+            })
+            @@include('html_components/_card.html', {
+            "img_webp": "img/card5.webp",
+            "img_jpg": "img/card5.jpg",
+            "h2": "Люкс",
+            "sizes": "Размеры (ШхГхВ) - 90х70х180 см",
+            "quad": "Площадь - 0,63 м2",
+            "features": "Оснащение номера",
+            "price": "Цена за сутки:"
+            })
+            @@include('html_components/_card.html', {
+            "img_webp": "img/card6.webp",
+            "img_jpg": "img/card6.jpg",
+            "h2": "Супер-люкс",
+            "sizes": "Размеры (ШхГхВ) - 90х70х180 см",
+            "quad": "Площадь - 0,63 м2",
+            "features": "Оснащение номера",
+            "price": "Цена за сутки:"
+            })
+        </section>
     </div>
+    @@include('html_components/_popup_filter.html')
+    @@include('html_components/_popup_reserv.html')
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/reserv.js"></script>
 </body>
 
 </html>

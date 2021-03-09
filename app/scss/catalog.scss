@@ -1,0 +1,18 @@
+.catalog {
+    grid-area: catalog;
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .catalog {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .catalog {
+        width: 870px;
+    }
+}

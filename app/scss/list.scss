@@ -1,14 +1,20 @@
 .list {
+    list-style-type: none;
+
     &_header {
         display: none;
-        list-style-type: none;
         width: 100%;
+    }
+
+    &_card {
+        padding-left: 25px;
+        padding-top: 16px;
+        margin-bottom: 20px;
     }
 
     &_slider {
         list-style-type: none;
         padding-left: 33px;
-        ;
     }
 
     &_footer {

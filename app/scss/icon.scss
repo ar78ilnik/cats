@@ -1,10 +1,10 @@
 .icon {
-    &-logo {
+    &_logo {
         width: 46px;
         height: 38px;
     }
 
-    &-burger {
+    &_burger {
         width: 38px;
         height: 26px;
         cursor: pointer;
@@ -17,6 +17,12 @@
     }
 
     &_contacts {
+        width: 14px;
+        height: 14px;
+        display: block;
+    }
+
+    &_contacts-menu {
         width: 24px;
         height: 24px;
     }
@@ -25,16 +31,33 @@
         width: 27px;
         height: 49px;
     }
+
+    &_filter {
+        width: 12px;
+        height: 15px;
+    }
+
+    &_select {
+        width: 12px;
+        height: 15px;
+    }
+
+    &_close {
+        display: none;
+        width: 14px;
+        height: 14px;
+        justify-self: end;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .icon {
-        &-logo {
+        &_logo {
             width: 63px;
             height: 52px;
         }
 
-        &-burger {
+        &_burger {
             display: none;
         }
 

@@ -11,14 +11,60 @@
     }
 
     &_present::after {
-    	content: '';
-    	display: block;
-    	width: 36px;
-    	height: 36px;
-    	position: absolute;
-    	top: 10px;
-    	right: 10px;
-    	border-radius: 50%;
-    	background-image: url('../img/icon-paw.svg');
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        border-radius: 50%;
+        background-image: url('../img/paw.svg');
+    }
+
+    &_filter {
+        width: 111px;
+        @include font (Lato, 14px, 600, normal, 17px, $black);
+        background-color: $white;
+        width: 111px;
+        height: 35px;
+        border: none;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        filter: drop-shadow(0 1px 3px $shadow);
+        grid-area: filter;
+    }
+
+    &_card {
+        @include font (Lato, 16px, 600, normal, 19px, $white);
+        padding: 15px 100px 15px 30px;
+        border-radius: 30px;
+        box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+        border: none;
+        background-color: $orange;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &_card::after {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+        background-image: url('../img/paw-card.svg');
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .button {
+        &_filter {
+            display: none;
+        }
     }
 }

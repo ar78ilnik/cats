@@ -1,30 +1,34 @@
 /* Собственно сам слайдер */
-.slider{
+.slider {
     max-width: 100%;
     margin: 0 auto;
     position: relative;
-    
+
     height: 300px;
     margin-bottom: 130px;
     margin: auto;
+
     &__text {
         @include font (Lato, 15px, 500, normal, 21px, $black);
     }
 }
+
 /* Картинка мастабируется по отношению к родительскому элементу */
-.item {
-    width: 100;
+.item_slider {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .slider .item img {
     object-fit: cover;
 }
 
 /* Кнопки вперед и назад */
-.slider .prev, .slider .next {
+.slider .prev,
+.slider .next {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -71,10 +75,11 @@
 /* Кружочки */
 
 .slider-dots {
-  text-align: center;
- 
+    text-align: center;
+
 }
-.slider-dots_item{
+
+.slider-dots_item {
     cursor: pointer;
     height: 12px;
     width: 12px;
@@ -104,6 +109,7 @@
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }
@@ -113,6 +119,7 @@
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }

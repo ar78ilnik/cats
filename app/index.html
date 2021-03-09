@@ -17,7 +17,10 @@
                 <span class="present__city">Санкт-Петербург</span>
                 <h1 class="present__title">Котейка<span class="present__about">Уютная гостиница для котов и кошек</span>
                 </h1>
-                <button class="button button_present">Забронировать</button>
+                @@include('html_components/_button.html', {
+                "class": "button_present",
+                "text": "Забронировать"
+                })
             </div>
         </section>
         <section class="whyus">
@@ -25,42 +28,42 @@
             <div class='container container_whyus'>
                 <article class="whyus__article">
                     <svg class="icon icon_whyus">
-                        <use xlink:href="../img/sprite.svg#icon-why1"></use>
+                        <use xlink:href="../img/sprite.svg#why1"></use>
                     </svg>
                     <h3 class="title title_h3">Комфортная температура</h3>
                     <p class="whyus__text">Во всех номерах подерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</p>
                 </article>
                 <article class="whyus__article">
                     <svg class="icon icon_whyus">
-                        <use xlink:href="../img/sprite.svg#icon-why2"></use>
+                        <use xlink:href="../img/sprite.svg#why2"></use>
                     </svg>
                     <h3 class="title title_h3">Видеонаблюдение</h3>
                     <p class="whyus__text">Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера.</p>
                 </article>
                 <article class="whyus__article">
                     <svg class="icon icon_whyus">
-                        <use xlink:href="../img/sprite.svg#icon-why3"></use>
+                        <use xlink:href="../img/sprite.svg#why3"></use>
                     </svg>
                     <h3 class="title title_h3">Услуги Зоотакси</h3>
                     <p class="whyus__text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
                 </article>
                 <article class="whyus__article">
                     <svg class="icon icon_whyus">
-                        <use xlink:href="../img/sprite.svg#icon-why4"></use>
+                        <use xlink:href="../img/sprite.svg#why4"></use>
                     </svg>
                     <h3 class="title title_h3">Сбалансированное питание</h3>
                     <p class="whyus__text">Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.</p>
                 </article>
                 <article class="whyus__article">
                     <svg class="icon icon_whyus">
-                        <use xlink:href="../img/sprite.svg#icon-why5"></use>
+                        <use xlink:href="../img/sprite.svg#why5"></use>
                     </svg>
                     <h3 class="title title_h3">Ежедневные прогулки</h3>
                     <p class="whyus__text">По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.</p>
                 </article>
                 <article class="whyus__article">
                     <svg class="icon icon_whyus">
-                        <use xlink:href="../img/sprite.svg#icon-why6"></use>
+                        <use xlink:href="../img/sprite.svg#why6"></use>
                     </svg>
                     <h3 class="title title_h3">Лучшие ветеринары</h3>
                     <p class="whyus__text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
@@ -73,6 +76,7 @@
         @@include('html_components/_footer.html')
     </body>
     <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+<article class="card">
+    <picture>
+        <source srcset=@@img_webp type="image/webp">
+        <img src="@@img_jpg" alt="">
+    </picture>
+    <ul class="list list_card">
+        <h2 class="title title_card">@@h2</h2>
+        <li class="item item_card">@@sizes</li>
+        <li class="item item_card">@@quad</li>
+        <li class="item item_card">@@features</li>
+        <li class="item item_card">@@price</li>
+    </ul>
+    <div class="container container_card">
+        @@include('_button.html', {
+        "class": "button_card",
+        "text": "Забронировать"
+        })
+    </div>
+</article>

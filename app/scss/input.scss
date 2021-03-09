@@ -1,0 +1,28 @@
+.input {
+    &_minmax {
+        width: 34%;
+        height: 36px;
+    }
+
+    &_check {
+        display: none;
+    }
+
+    &_submits {
+        width: 240px;
+        height: 42px;
+        border-radius: 25px;
+        @include font(Lato, 14px, 600, normal, 16px, $black);
+        border: none;
+    }
+
+    &_submits-submit {
+        margin-bottom: 10px;
+        background-color: $yellow;
+    }
+
+    &_submits-reset {
+        background-color: $white;
+        border: 2px solid $yellow;
+    }
+}

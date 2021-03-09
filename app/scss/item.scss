@@ -2,4 +2,8 @@
     &_slider {
         width: 678px;
     }
+
+    &_card {
+        @include font(Lato, 14px, 400, normal, 25px, $black);
+    }
 }

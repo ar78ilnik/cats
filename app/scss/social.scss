@@ -3,10 +3,23 @@
     display: flex;
     justify-content: space-between;
 
+    &_menu {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
     &__link {
         font-size: 0;
         line-height: 0;
         display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__link_menu {
         width: 24px;
         height: 24px;
     }
