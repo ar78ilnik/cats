@@ -1,0 +1,24 @@
+/* List */
+.list {
+    &_menu {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .list {
+        &_menu {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: $pc-width) {
+    .list {
+        &_menu {
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$pc-width: 1366px;
+
+:root {
+    --black: #1A212F;
+}

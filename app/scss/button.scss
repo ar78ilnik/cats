@@ -1,0 +1,17 @@
+/* Button */
+.button {
+    &_menu {
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        border: 0;
+        width: 22px;
+        height: 14px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .button {
+        display: none;
+    }
+}
