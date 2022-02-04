@@ -8,10 +8,28 @@
         width: 22px;
         height: 14px;
     }
+
+    &-book {
+        width: 200px;
+        height: 50px;
+        border: 0;
+        border-radius: 25px;
+        font-family: 'Roboto-Bold', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        cursor: pointer;
+    }
 }
 
 @media (min-width: $tablet-width) {
     .button {
-        display: none;
+        &_menu {
+            display: none;
+        }
     }
 }

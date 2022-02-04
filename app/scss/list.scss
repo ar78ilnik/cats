@@ -3,6 +3,27 @@
     &_menu {
         display: none;
     }
+
+    &_features {
+        background-color: var(--main);
+        padding-top: 50px;
+    }
+
+    &__item {
+        &_features {
+            width: 90%;
+            margin: 0 auto;
+            min-height: auto;
+            background-color: var(--white);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -12,6 +33,17 @@
             display: flex;
             justify-content: space-between;
         }
+
+        &_features {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            &_features {
+                flex-basis: 324px;
+            }
+        }
     }
 }
 
@@ -19,6 +51,12 @@
     .list {
         &_menu {
             width: 40%;
+        }
+
+        &__item {
+            &_features {
+                flex-basis: 370px;
+            }
         }
     }
 }

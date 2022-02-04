@@ -2,4 +2,71 @@
 .promo {
     min-height: 457px;
     background-image: url(../img/1-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    padding-top: 30px;
+
+    &__city {
+        font-size: 0.75rem;
+    }
+
+    &__name {
+        font-family: 'Roboto-Bold', sans-serif;
+        font-size: 2.75rem;
+        font-weight: 700;
+    }
+
+    &__what {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .promo {
+        min-height: 868px;
+        background-image: url(../img/1-tablet.jpg);
+        padding-top: 100px;
+
+        &__city {
+            font-size: 0.875rem;
+        }
+
+        &__name {
+            font-family: 'Roboto-Bold', sans-serif;
+            font-size: 3.875rem;
+            font-weight: 700;
+        }
+
+        &__what {
+            font-family: 'Roboto-Medium', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media (min-width: $pc-width) {
+    .promo {
+        min-height: 504px;
+        background-image: url(../img/1-pc.jpg);
+        padding-top: 140px;
+
+        &__city {
+            font-size: 0.875rem;
+        }
+
+        &__name {
+            font-family: 'Roboto-Bold', sans-serif;
+            font-size: 3.875rem;
+            font-weight: 700;
+        }
+
+        &__what {
+            font-family: 'Roboto-Medium', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+    }
 }

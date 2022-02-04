@@ -12,11 +12,17 @@
 
     &_promo {
         min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 @media (min-width: $tablet-width) {
     .container {
+        width: 678px;
+
         &_header {
             width: 88%;
             min-height: 76px;
@@ -26,9 +32,16 @@
 
 @media (min-width: $pc-width) {
     .container {
+        width: 1170px;
+
         &_header {
             width: 85%;
             min-height: 76px;
+        }
+
+        &_promo {
+            align-items: flex-start;
+            padding-left: 200px;
         }
     }
 }
