@@ -1,0 +1,46 @@
+/* Form */
+.form {
+    font-family: 'Lato-Bold', sans-serif;
+    font-weight: 500;
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    &__fieldset {
+        border: 0;
+        margin-bottom: 30px;
+    }
+
+    &__legend {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        padding-left: 10px;
+    }
+
+    &__box {
+        display: flex;
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+
+    &__check {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: 1px solid var(--grey);
+    }
+
+    &__check:checked {
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.25L4.84615 7L11 1' stroke='%23141312' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        font-family: 'Lato-Bold', sans-serif;
+        width: 100px;
+        height: 35px;
+        border: 1px solid var(--grey);
+    }
+}

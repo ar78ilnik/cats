@@ -4,9 +4,22 @@
         display: none;
     }
 
+    &_rooms {
+        width: 100%;
+    }
+
     &_features {
         background-color: var(--main);
         padding-top: 50px;
+    }
+
+    &_sort {
+        position: absolute;
+    }
+
+    &_footer {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -22,6 +35,24 @@
             gap: 20px;
             padding: 25px;
             margin-bottom: 30px;
+        }
+
+        &_sort {
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.5rem;
+            background-color: var(--white);
+            cursor: pointer;
+        }
+
+        &_rooms {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+
+        &_footer {
+            flex-basis: 40%;
         }
     }
 }
@@ -39,9 +70,21 @@
             flex-wrap: wrap;
         }
 
+        &_footer {
+            grid-column: 2/4;
+            grid-row: 1/2;
+            flex-wrap: no-wrap;
+            justify-content: space-between;
+        }
+
         &__item {
             &_features {
                 flex-basis: 324px;
+            }
+
+            &_footer {
+                flex-basis: 25%;
+                text-align: end;
             }
         }
     }
@@ -56,6 +99,10 @@
         &__item {
             &_features {
                 flex-basis: 370px;
+            }
+
+            &_rooms {
+                font-size: 0.8rem;
             }
         }
     }

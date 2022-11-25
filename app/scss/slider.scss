@@ -1,0 +1,32 @@
+/* Slider */
+.slider {
+    width: 290px;
+    height: 230px;
+    margin: 0 auto;
+
+    &__item {
+        max-width: inherit;
+        height: 180px;
+        font-size: 0.9rem;
+        font-family: 'Roboto-Medium', sans-serif;
+        font-weight: 500;
+        overflow: hidden;
+        padding-left: 35px;
+        padding-top: 25px;
+        animation-duration: 3s;
+        animation-name: slidein;
+        position: relative;
+    }
+
+    &__item::after {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 42px;
+        background-image: url(../img/bracket.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+}

@@ -7,9 +7,45 @@
         color: var(--black);
     }
 
+    &-book {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10%;
+        width: 240px;
+        height: 50px;
+        border: 0;
+        border-radius: 25px;
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding-right: 10px;
+
+        &_white {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        &_orange {
+            background-color: var(--orange);
+            color: var(--white);
+        }
+    }
+
     &_social {
         display: block;
         width: 24px;
         height: 24px;
+    }
+
+    &_copy {
+        text-decoration: none;
+        color: var(--grey);
+    }
+
+    &__right,
+    &__politics {
+        display: block;
     }
 }

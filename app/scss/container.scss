@@ -1,5 +1,6 @@
 /* Container */
 .container {
+    width: 290px;
     margin: 0 auto;
 
     &_header {
@@ -10,12 +11,39 @@
         align-items: center;
     }
 
+    &_main {
+        background-color: var(--main);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, min-content);
+        grid-row-gap: 2rem;
+    }
+
     &_promo {
         min-height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &_contacts {
+        width: 100%;
+        background-color: var(--yellow);
+    }
+
+    &_action {
+        min-height: 496px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    &_form {
+        width: 290px;
     }
 }
 
@@ -27,6 +55,26 @@
             width: 88%;
             min-height: 76px;
         }
+
+        &_main {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, min-content);
+
+            &-catalog {
+                padding-top: 60px;
+            }
+        }
+
+        &_contacts {
+            width: 100%;
+            display: flex;
+        }
+
+        &_action {
+            min-height: 359px;
+            align-items: flex-start;
+            padding-left: 50px;
+        }
     }
 }
 
@@ -35,13 +83,27 @@
         width: 1170px;
 
         &_header {
-            width: 85%;
+            width: 1170px;
             min-height: 76px;
+        }
+
+        &_main {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, min-content);
+        }
+
+        &_action {
+            padding-left: 270px;
+            padding-top: 5rem;
         }
 
         &_promo {
             align-items: flex-start;
             padding-left: 200px;
+        }
+
+        &_contacts {
+            width: 100%;
         }
     }
 }

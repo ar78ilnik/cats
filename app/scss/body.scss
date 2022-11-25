@@ -4,4 +4,40 @@
     font-size: 1rem;
     line-height: 150%;
     color: var(--text);
+    position: relative;
+
+    &__filter {
+        display: none;
+    }
+
+    &__filter_open {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 300vh;
+        width: 100vw;
+        padding-top: 10vh;
+        background-color: rgba(255, 254, 253, 0.8);
+        backdrop-filter: blur(8px);
+    }
+}
+
+@media (min-width: $pc-width) {
+    .body {
+        &__filter {
+            display: block;
+            width: 290px;
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        &__filter_open {
+            position: static;
+            height: auto;
+            width: 290px;
+            padding-top: 0;
+            backdrop-filter: 0;
+        }
+    }
 }

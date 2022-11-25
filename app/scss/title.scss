@@ -11,12 +11,50 @@
         text-align: left;
         font-size: 1rem;
     }
+
+    &_rooms {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    &_action {
+        font-family: 'Rubik-Bold', sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.75rem;
+    }
 }
 
 @media (min-width: $tablet-width) {
     .title {
         &_h2 {
             font-size: 2.25rem;
+        }
+
+        &_rooms {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        &_action {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: $pc-width) {
+    .title {
+        &_rooms {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-self: start;
+        }
+
+        &_action {
+            text-align: left;
+        }
+
+        &_contacts {
+            text-align: left;
         }
     }
 }

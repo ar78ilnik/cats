@@ -1,0 +1,10 @@
+/* Filter */
+.filter {
+    width: 290px;
+    margin: 0 auto;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-template-rows: 30px repeat(4, min-content);
+    gap: 1rem;
+}

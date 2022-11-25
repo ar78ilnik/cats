@@ -15,6 +15,12 @@ li {
     list-style-type: none;
 }
 
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+}
+
 $mobile-width: 320px;
 $tablet-width: 768px;
 $pc-width: 1366px;

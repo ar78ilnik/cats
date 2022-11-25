@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Уютная гостиница для котов и кошек</title>
+</head>
+
+<body class="body">
+    <h1 class="title title_h1">Каталог номеров для кошек</h1>
+    @@include('html_components/_header.html')
+    <main class="main">
+        <div class="container container_main">
+            <h2 class="title title_h2 title_rooms">Наши номера</h2>
+            <div class="body__filter">
+                @@include('html_components/_filter.html')
+            </div>
+            <button class="button_rooms" type="button">
+                <svg class="icon icon_filtre">
+                    <use xlink:href="img/sprite.svg#filtre"></use>
+                </svg>
+                Фильтры
+            </button>
+            <details class="sort">
+                <summary class="sort__sum">
+                    <svg class="icon icon_filtre">
+                        <use xlink:href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                    По площади
+                    <svg class="icon icon_filtre">
+                        <use xlink:href="img/sprite.svg#details"></use>
+                    </svg>
+                </summary>
+                <ul class="list list_sort">
+                    <li class="list__item list__item_sort">
+                        <svg class="icon icon_filtre">
+                            <use xlink:href="img/sprite.svg#arrow-up"></use>
+                        </svg>
+                        По площади
+                    </li>
+                    <li class="list__item list__item_sort">
+                        <svg class="icon icon_filtre">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                        По площади
+                    </li>
+                    <li class="list__item list__item_sort">
+                        <svg class="icon icon_filtre">
+                            <use xlink:href="img/sprite.svg#arrow-up"></use>
+                        </svg>
+                        По цене
+                    </li>
+                    <li class="list__item list__item_sort">
+                        <svg class="icon icon_filtre">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                        По цене
+                    </li>
+                </ul>
+            </details>
+            <section class="rooms">
+                <article class="rooms__item">
+                    <img class="rooms__img" src="img/room1-mobile.jpg" alt="">
+                    <div class="rooms__content">
+                        <h3 class="title title_h3">Эконом</h3>
+                        <ul class="list list_rooms">
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Размеры (ШхГхВ):</span>
+                                <div class="list__key">90х70х180 см</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Площадь:</span>
+                                <div class="list__key">0,63 м2</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Оснащение номера:</span>
+                                <div class="list__key">
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment1"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Цена за сутки:</span>
+                                <div class="list__key">100₽</div>
+                            </li>
+                        </ul>
+                        @@include('html_components/_book-orange.html')
+                    </div>
+                </article>
+                <article class="rooms__item">
+                    <img class="rooms__img" src="img/room2-mobile.jpg" alt="">
+                    <div class="rooms__content">
+                        <h3 class="title title_h3">Эконом плюс</h3>
+                        <ul class="list list_rooms">
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Размеры (ШхГхВ):</span>
+                                <div class="list__key">90х100х180 см</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Площадь:</span>
+                                <div class="list__key">0,90 м2</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Оснащение номера:</span>
+                                <div class="list__key">
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment1"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment2"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Цена за сутки:</span>
+                                <div class="list__key">200₽</div>
+                            </li>
+                        </ul>
+                        @@include('html_components/_book-orange.html')
+                    </div>
+                </article>
+                <article class="rooms__item">
+                    <img class="rooms__img" src="img/room3-mobile.jpg" alt="">
+                    <div class="rooms__content">
+                        <h3 class="title title_h3">Комфорт</h3>
+                        <ul class="list list_rooms">
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Размеры (ШхГхВ):</span>
+                                <div class="list__key">100х125х180 см</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Площадь:</span>
+                                <div class="list__key">1,13 м2</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Оснащение номера:</span>
+                                <div class="list__key">
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment1"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment2"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment3"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Цена за сутки:</span>
+                                <div class="list__key">250₽</div>
+                            </li>
+                        </ul>
+                        @@include('html_components/_book-orange.html')
+                    </div>
+                </article>
+                <article class="rooms__item">
+                    <img class="rooms__img" src="img/room4-mobile.jpg" alt="">
+                    <div class="rooms__content">
+                        <h3 class="title title_h3">Сьют</h3>
+                        <ul class="list list_rooms">
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Размеры (ШхГхВ):</span>
+                                <div class="list__key">125х125х180 см</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Площадь:</span>
+                                <div class="list__key">1,56 м2</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Оснащение номера:</span>
+                                <div class="list__key">
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment1"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment2"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment3"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Цена за сутки:</span>
+                                <div class="list__key">350₽</div>
+                            </li>
+                        </ul>
+                        @@include('html_components/_book-orange.html')
+                    </div>
+                </article>
+                <article class="rooms__item">
+                    <img class="rooms__img" src="img/room5-mobile.jpg" alt="">
+                    <div class="rooms__content">
+                        <h3 class="title title_h3">Люкс</h3>
+                        <ul class="list list_rooms">
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Размеры (ШхГхВ):</span>
+                                <div class="list__key">160х160х180 см</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Площадь:</span>
+                                <div class="list__key">2,56 м2</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Оснащение номера:</span>
+                                <div class="list__key">
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment1"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment2"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment3"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment4"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Цена за сутки:</span>
+                                <div class="list__key">500₽</div>
+                            </li>
+                        </ul>
+                        @@include('html_components/_book-orange.html')
+                    </div>
+                </article>
+                <article class="rooms__item">
+                    <img class="rooms__img" src="img/room6-mobile.jpg" alt="">
+                    <div class="rooms__content">
+                        <h3 class="title title_h3">Супер-Люкс</h3>
+                        <ul class="list list_rooms">
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Размеры (ШхГхВ):</span>
+                                <div class="list__key">180х160х180 см</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Площадь:</span>
+                                <div class="list__key">2,88 м2</div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Оснащение номера:</span>
+                                <div class="list__key">
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment1"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment2"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment3"></use>
+                                    </svg>
+                                    <svg class="icon icon_equipment">
+                                        <use xlink:href="img/sprite.svg#equipment4"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item list__item_rooms">
+                                <span class="list__feature">Цена за сутки:</span>
+                                <div class="list__key">600₽</div>
+                            </li>
+                        </ul>
+                        @@include('html_components/_book-orange.html')
+                    </div>
+                </article>
+            </section>
+            @@include('html_components/_action.html')
+            @@include('html_components/_contacts.html')
+        </div>
+    </main>
+    @@include('html_components/_footer.html')
+</body>
+<script src="js/catalog.js"></script>
+
+</html>
